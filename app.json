@@ -14,14 +14,14 @@
     "baileys-md",
     "md-bot"
   ],
-  "website": "https://github.com/Fortunatusmokaya/dreaded-v2#readme",
-  "repository": "https://github.com/Fortunatusmokaya/dreaded-v2.git",
+  "website": "https://github.com/Mateo-Chatbot/dreaded-v2#readme",
+  "repository": "https://github.com/Mateo-Chatbot/dreaded-v2.git",
   "logo": "https://telegra.ph/file/d6dab955fbaa42fce2280.jpg",
   "success_url": "/",
   "env": {
     "PREFIX": {
       "description": "choose your prefix for dreaded. To prevent errors and confusion you must set a prefix",
-      "value": ".",
+      "value": "/",
       "required": true
     },
     "DEV": {
