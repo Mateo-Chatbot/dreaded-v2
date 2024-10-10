@@ -19,7 +19,7 @@ module.exports = async (context) => {
 
         
         const getGreeting = () => {
-            const currentHour = DateTime.now().setZone('Africa/Nairobi').hour;
+            const currentHour = DateTime.now().setZone('Africa/Lagos').hour;
 
             if (currentHour >= 5 && currentHour < 12) {
                 return 'Good morning 🌄';
