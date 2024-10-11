@@ -1,5 +1,5 @@
-const events = process.env.EVENTS || 'false';
-const botname = process.env.BOTNAME || 'DREADED';
+const events = process.env.EVENTS || 'true';
+const botname = process.env.BOTNAME || 'Gerald - md';
 
 const Events = async (client, Fortu) => {
     const Myself = await client.decodeJid(client.user.id);
@@ -21,7 +21,7 @@ const Events = async (client, Fortu) => {
             if (Fortu.action == "add") {
                 let userName = num;
 
-                let Welcometext = ` Holla @${userName.split("@")[0]} 👋\n\nWelcome to ${metadata.subject}.\n\nGroup Description:-  ${desc}\n\nThank You.\n\nThis is an automated message sent by ${botname} via baileys.`;
+                let Welcometext = ` Holla @${userName.split("@")[0]} 👋\n\nWelcome to ${metadata.subject}.\n\nGroup Description:-  ${desc}\n\nThank You.\n\nThis is an automated message sent by ${botname}.`;
                 if (events === 'true') {
                     await client.sendMessage(Fortu.id, {
                         image: { url: dpuser },
